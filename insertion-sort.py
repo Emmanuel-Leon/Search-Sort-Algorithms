@@ -3,11 +3,11 @@
 """
 Created on Fri Nov 29 00:29:03 2024
 
-@author: emmanuel
+@author: emmanuel D Ramon
 """
+#Algoritmo de insersion en un arrello
 
-
-def insertion_sort(arr: list) -> list:
+def insertion_sort(arr):
     for i in range(1, len(arr)):
         current_value = arr[i]
         current = i
@@ -18,3 +18,7 @@ def insertion_sort(arr: list) -> list:
 
         arr[current] = current_value
 
+arr = [5,1,8,61,87,2]
+
+insertion_sort(arr)
+print (arr)

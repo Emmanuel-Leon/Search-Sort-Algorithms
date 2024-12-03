@@ -3,11 +3,11 @@
 """
 Created on Fri Nov 29 00:32:46 2024
 
-@author: emmanuel
+@author: Emmanuel D Ramon
 """
+#Algoritmo de ordenamiento por fusion/mezcla
 
-
-def merge_sort(arr: list) -> list:
+def merge_sort(arr):
     if len(arr) > 1:
         middle = len(arr) // 2
         left = arr[:middle]
@@ -45,3 +45,8 @@ def merge_sort(arr: list) -> list:
         print(arr)
         print('-' * 50)
     return arr
+
+arr=[5,6,1,2,-4,15]
+merge_sort(arr)
+
+print (arr)
